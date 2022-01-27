@@ -12,20 +12,8 @@ a {
   color: black;
 }
 
-button, input[type="submit"], input[type="reset"] {
- background: none;
- color: inherit;
- border: none;
- padding: 0;
- font: inherit;
- cursor: pointer;
- outline: inherit;
-}
-
 .hd-page {
   position: relative;
-  animation-name: load;
-  animation-duration: 3s;
 }
 
 .hd-navigation-container {
@@ -38,15 +26,6 @@ button, input[type="submit"], input[type="reset"] {
   position: fixed;
   bottom: 3%;
   left: 2%;
-}
-
-@keyframes load {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .hd-container {
