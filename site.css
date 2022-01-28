@@ -22,6 +22,10 @@ a {
   left: 2%;
 }
 
+.hd-navigation-container-mobile {
+  display: none;
+}
+
 .hd-contact-container {
   position: fixed;
   bottom: 3%;
@@ -64,18 +68,18 @@ a {
 (-webkit-min-device-pixel-ratio: 2) {
 
   .hd-navigation-container {
+    display: none;
+  }
+
+  .hd-navigation-container-mobile {
+    position: fixed;
     font-size: 3vw;
     left: 3%;
     top: 2%;
+    display: block;
   }
 
   .hd-contact-container {
-    font-size: 3vw;
-    bottom: 3%;
-    left: 3%;
-  }
-
-  .hd-contact-container-mobile {
     display: none;
   }
 
@@ -90,9 +94,5 @@ a {
     width: 35%;
     left: 0;
     bottom: 0;
-  }
-
-  .hd-gif {
-    display: none;
   }
 }
