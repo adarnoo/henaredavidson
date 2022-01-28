@@ -56,3 +56,36 @@ a {
 .hd-gif {
   width: 100%;
 }
+
+/* Mobile View */
+
+@media only screen and (min-device-width: 320px) and
+(max-device-width: 480px) and
+(-webkit-min-device-pixel-ratio: 2) {
+
+  .hd-navigation-container {
+    font-size: 2vw;
+    left: 3%;
+    top: 2%;
+  }
+
+  .hd-contact-container {
+    font-size: 2vw;
+    bottom: 2%;
+    left: 3%;
+  }
+
+  .hd-container {
+    width: 60%;
+    left: 0;
+    margin: 0 5% 0 35%;
+    z-index: -1;
+  }
+
+  .hd-scissors-container {
+    width: 20%;
+    left: 0;
+    top: 70%;
+  }
+
+}
