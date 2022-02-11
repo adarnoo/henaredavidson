@@ -22,6 +22,10 @@ a {
   left: 2%;
 }
 
+.hd-navigation-container-mobile {
+  display: none;
+}
+
 .hd-contact-container {
   position: fixed;
   bottom: 3%;
@@ -30,7 +34,7 @@ a {
 
 .hd-container {
   position: absolute;
-  left: 55%;
+  left: 50%;
   width: 30%;
 }
 
@@ -64,12 +68,18 @@ a {
 (-webkit-min-device-pixel-ratio: 2) {
 
   .hd-navigation-container {
+    display: none;
+  }
+
+  .hd-navigation-container-mobile {
+    position: fixed;
     font-size: 3vw;
     left: 3%;
     top: 2%;
+    display: block;
   }
 
-  .hd-contact-container-mobile {
+  .hd-contact-container {
     display: none;
   }
 
@@ -85,3 +95,4 @@ a {
     left: 0;
     bottom: 0;
   }
+}
