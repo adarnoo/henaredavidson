@@ -32,10 +32,19 @@ a {
   left: 2%;
 }
 
-.hd-container {
-  position: absolute;
+.hd-container-video {
+  position: fixed;
   left: 50%;
   width: 30%;
+  top: 3%;
+}
+
+.or-video-margin {
+  position: relative;
+  width: 80%;
+  margin: 0 10%;
+  transform: rotate(180deg);
+  box-shadow: 2px 2px 4px grey;
 }
 
 .hd-image--first {
@@ -83,16 +92,22 @@ a {
     display: none;
   }
 
-  .hd-container {
+  .hd-container-video {
     width: 60%;
     left: 0;
     margin: 0 5% 0 35%;
     z-index: -1;
+    top: 2%;
   }
 
   .hd-scissors-container {
     width: 35%;
     left: 0;
     bottom: 0;
+  }
+
+  .or-video-margin {
+    width: 100%;
+    margin: 0;
   }
 }
