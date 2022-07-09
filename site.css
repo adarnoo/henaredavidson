@@ -3,8 +3,8 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  font-family: courier;
-  font-size: 1vw;
+  font-family: helvetica;
+  background-color: #EEEEEE;
 }
 
 a {
@@ -12,62 +12,49 @@ a {
   color: black;
 }
 
+img {
+  width: 100%;
+}
+
 .hd-page {
   position: relative;
+  padding: 10px;
 }
 
-.hd-navigation-container {
+.hd-header-container {
   position: fixed;
-  top: 3%;
-  left: 2%;
+  top: 10px;
+  display: inline-block;
 }
 
-.hd-navigation-container-mobile {
-  display: none;
+.hd-header {
+  background: linear-gradient(to right, rgb(0, 54, 4) 0%, rgba(0, 0, 0, 0) 63%, rgb(25, 233, 107) 100%);
+  border-radius: 50px;
+  padding: 5px 20px;
+  font-size: 60px;
+  cursor: default;
 }
 
-.hd-contact-container {
-  position: fixed;
-  bottom: 3%;
-  left: 2%;
+.hd-links-container {
+  position: absolute;
+  padding-top: 150px;
 }
 
-.hd-container-video {
-  position: fixed;
-  left: 50%;
-  width: 30%;
-  top: 3%;
+.hd-link {
+  display: inline-block;
+  border-radius: 50px;
+  padding: 5px 20px;
+  font-size: 60px;
+  background: linear-gradient(to right, rgb(0, 54, 4) 0%, rgba(0, 0, 0, 0) 63%, rgb(25, 233, 107) 100%);
+  margin-bottom: 10px;
 }
 
-.or-video-margin {
-  position: relative;
-  width: 80%;
-  margin: 0 10%;
-  transform: rotate(180deg);
-  box-shadow: 2px 2px 4px grey;
+.hd-link, a {
+  color: black;
 }
 
-.hd-image--first {
-  position: relative;
-  width: 100%;
-  margin: 5% 0% 5% 0%;
-}
-
-.hd-image {
-  position: relative;
-  width: 100%;
-  margin: 0% 0% 5% 0%;
-}
-
-.hd-scissors-container {
-  position: fixed;
-  bottom: 0%;
-  right: 0%;
-  width: 10%;
-}
-
-.hd-gif {
-  width: 100%;
+.hd-link:hover {
+  opacity: 50%;
 }
 
 /* Mobile View */
@@ -76,38 +63,12 @@ a {
 (max-device-width: 480px) and
 (-webkit-min-device-pixel-ratio: 2) {
 
-  .hd-navigation-container {
-    display: none;
+  .hd-header {
+    font-size: 75px;
   }
 
-  .hd-navigation-container-mobile {
-    position: fixed;
-    font-size: 3vw;
-    left: 3%;
-    top: 2%;
-    display: block;
+  .hd-link {
+    font-size: 75px;
   }
 
-  .hd-contact-container {
-    display: none;
-  }
-
-  .hd-container-video {
-    width: 60%;
-    left: 0;
-    margin: 0 5% 0 35%;
-    z-index: -1;
-    top: 2%;
-  }
-
-  .hd-scissors-container {
-    width: 35%;
-    left: 0;
-    bottom: 0;
-  }
-
-  .or-video-margin {
-    width: 100%;
-    margin: 0;
-  }
 }
