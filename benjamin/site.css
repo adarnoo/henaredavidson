@@ -47,6 +47,10 @@ img {
   margin-bottom: 10px;
 }
 
+.hd-image--bottom {
+  margin-bottom: 0px;
+}
+
 /* Mobile View */
 
 @media only screen and (min-device-width: 320px) and
